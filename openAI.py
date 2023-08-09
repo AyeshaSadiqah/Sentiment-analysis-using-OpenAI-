@@ -1,25 +1,21 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 get_ipython().system('pip install openai')
 
 
-# In[14]:
+
 
 
 import openai
 
 
-# In[15]:
+
 
 
 openai.api_key = "write key here"
 
 
-# In[16]:
+
 
 
 def Sentiment_analysis(text):
@@ -31,7 +27,7 @@ def Sentiment_analysis(text):
     ]
 
 
-# In[17]:
+
 
 
 response = openai.ChatCompletion.create(
@@ -43,7 +39,7 @@ response = openai.ChatCompletion.create(
     )
 
 
-# In[18]:
+
 
 
 input=" i am a computer scirnce student"
@@ -52,7 +48,7 @@ response = Sentiment_analysis(input)
 print(input,':the sentiment is', response)
 
 
-# In[ ]:
+
 
 
 
